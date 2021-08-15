@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*, *:after, *:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  background: hsl(225, 100%, 94%);
+  font-size: 16px;
+  color: hsl(224, 23%, 55%);
+}
+
+h1, h2 {
+  color: hsl(223, 47%, 23%);
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0rem -5rem;
+}
+
+.order-card {
+  width: 25rem;
+  max-width: 85%;
+  overflow: hidden;
+  border-radius: 1.6rem;
+  background: #fff;
+  margin: 2rem 0;
+}
+
+.order-card>img {
+  width: 100%;
+}
+
+.order-summary {
+  margin-top: -5px;
+  padding: 2.5rem;
+}
+
+.order-header {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.order-header h1 {
+  font-size: 1.4rem;
+  font-weight: 900;
+  margin-bottom: .7rem;
+}
+
+.plan-info {
+  margin-right: auto;
+}
+
+.plan-info h2 {
+  font-size: 1rem;
+}
+
+.order-plan {
+  display: flex;
+  align-items: center;
+  background: hsl(225, 100%, 98%);
+  padding: 1.2rem;
+  border-radius: .8rem;
+  margin-bottom: 1.5rem;
+}
+
+.order-plan img {
+  width: 2.5rem;
+  margin-right: 1rem;
+}
+
+.order-plan a {
+  font-size: .9rem;
+  font-weight: 700;
+}
+
+.order-plan a:hover {
+  color: hsl(245deg 75% 52% / 69%);
+  text-decoration: none;
+}
+
+.btn-group button {
+  display: block;
+  width: 100%;
+  border-color: transparent;
+  background: transparent;
+  font-size: .9rem;
+  font-weight: 700;
+  padding: .6rem 0;
+  cursor: pointer;
+}
+
+button.btn-payment {
+  background: hsl(245, 75%, 52%);
+  color: #fff;
+  border-radius: .6rem;
+  box-shadow: 0px 10px 11px 1px #3829e04f;
+}
+
+button.btn-payment:hover {
+  background: hsl(245deg 75% 52% / 69%);
+}
+
+.btn-group button:nth-child(1) {
+  margin-bottom: .8rem;
+}
+
+button.btn-cancel {
+  color: #798ab9;
+}
+
+button.btn-cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+/* ---------- MEDIA QUERIES ---------- */
+@media only screen and (max-width: 768px) {
+  main {
+    height: auto;
+  }
+
+  main {
+    background-image: url(./images/pattern-background-mobile.svg);
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .order-plan {
+    flex-direction: column;
+  }
+
+  .plan-info {
+    margin: .7rem 0;
+  }
+
+  .order-plan img {
+    margin-right: unset;
+  }
+}

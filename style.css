@@ -18,7 +18,7 @@ h1, h2 {
 }
 
 main {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,7 +34,6 @@ main {
   overflow: hidden;
   border-radius: 1.6rem;
   background: #fff;
-  margin: 2rem 0;
 }
 
 .order-card>img {
@@ -128,11 +127,11 @@ button.btn-cancel:hover {
 /* ---------- MEDIA QUERIES ---------- */
 @media only screen and (max-width: 768px) {
   main {
-    height: auto;
+    background-image: url(./images/pattern-background-mobile.svg);
   }
 
-  main {
-    background-image: url(./images/pattern-background-mobile.svg);
+  .order-card {
+    margin: 2rem 0;
   }
 }
 
